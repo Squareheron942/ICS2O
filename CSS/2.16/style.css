@@ -1,0 +1,27 @@
+#my-first-div{
+  font-size: 15px;
+}
+#the-second-one{
+  font-size: 25px;
+}
+
+div h2 {
+  font-size: 0.8em;
+}
+
+div h3 {
+  font: 0.8rem;
+}
+
+div { 
+  border: 1px solid black; 
+  padding: 5px;
+}
+
+#the-second-one {
+  float: right;
+}
+
+#my-first-div{
+  float: left;
+}

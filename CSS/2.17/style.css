@@ -1,0 +1,14 @@
+a {
+	text-decoration: none;
+  color: white;
+  background-color: #f90;
+  padding: 10px;
+  border-radius: 4px;
+}
+a:hover{
+  background-color: #d80;
+}
+/* Ignore below this */
+body{
+  padding: 50px 50px;
+}

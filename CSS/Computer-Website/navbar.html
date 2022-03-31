@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- This next part makes the tab bar red (in dark mode) and blue (in light mode) in Safari 15 and some versions of Chrome -->
+    <meta name="theme-color" content="#ed4533" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#008dbb" media="(prefers-color-scheme: light)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+    <title>The Geeky Box</title>
+    <link href="/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <script src="script.js">
+    </script>
+    <nav>
+      <div class="navbar">
+        <ul>
+          <li class="nav">
+            <a class="navItem" id="main" href="/">Home</a>
+          </li>
+          <li class="nav">
+            <a class="navItem" href="#">Shop &darr;</a>
+            <div id="dropdown">
+              <ul>
+                <li>
+                  <a class="navlink" href="/shop/prebuilts/">Prebuilts</a>
+                  <a class="navlink" href="/shop/laptops/">Laptops</a>
+                  <a class="navlink" href="/shop/components/">Components</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav">
+            <a class="navItem" href="#">Brands &darr;</a>
+            <div id="dropdown">
+              <ul>
+                <li>
+                  <a class="navlink" href="https://www.amd.com" target="_blank">AMD</a>
+                  <a class="navlink" href="https://www.apple.com" target="_blank">Apple</a>
+                  <a class="navlink" href="https://www.intel.com" target="_blank">Intel</a>
+                  <a class="navlink" href="https://www.nvidia.com" target="_blank">Nvidia</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav">
+            <a class="navItem" href="#">Help &darr;</a>
+            <div id="dropdown">
+              <ul>
+                <li>
+                  <a class="navlink" href="/pcChoice/">What PC should I get?</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav">
+            <a class="navItem" href="https://pcpartpicker.com/list/" target="_blank">Design your own PC</a>
+          </li>
+          <li class="nav" id="last">
+            <a class="navItem" href="/sign up/">Register</a>
+          </li>
+          <li class="nav" id="last">
+					  <a class="navItem" id="cart" href="/cart/">
+              <img id="cart-img" src="/Images/shopping cart.png" alt="Cart" height="29px">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>

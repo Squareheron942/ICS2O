@@ -1,0 +1,12 @@
+body{
+	color: blue;
+}
+ul li, ol li{
+	color: green;
+}
+ol li:nth-child(2) {
+  background: rgb(0, 128, 0);
+}
+tr:nth-child(odd) {
+  background-color: #ffff0090;
+}
