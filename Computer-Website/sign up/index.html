@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<!-- This next part makes the tab bar red (in dark mode) and blue (in light mode) in Safari 15 and some versions of Chrome -->
+	<meta name="theme-color" content="#ed4533" media="(prefers-color-scheme: dark)">
+	<meta name="theme-color" content="#008dbb" media="(prefers-color-scheme: light)">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="multimedia/css/all.css">
+	<link href="/multimedia/css/fontawesome.css" rel="stylesheet">
+	<link href="/multimedia/css/brands.css" rel="stylesheet">
+	<link href="/multimedia/css/solid.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="theme-color" content="#ffffff">
+	<title>The Geeky Box</title>
+	<link href="/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="margin-left:150px;margin-right:150px;margin-top:80px; margin-bottom:80px;">
+	<script src="script.js">
+	</script>
+	<nav>
+		<div class="navbar">
+			<ul>
+				<li class="nav">
+					<a class="navItem" id="main" href="/">Home</a>
+				</li>
+				<li class="nav">
+					<a class="navItem" href="#">Shop &darr;</a>
+					<div id="dropdown">
+						<ul>
+							<li>
+								<a class="navlink" href="/shop/prebuilts/">Prebuilts</a>
+								<a class="navlink" href="/shop/laptops/">Laptops</a>
+								<a class="navlink" href="/shop/components/">Components</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav">
+					<a class="navItem" href="#">Brands &darr;</a>
+					<div id="dropdown">
+						<ul>
+							<li>
+								<a class="navlink" href="https://www.amd.com" target="_blank">AMD</a>
+								<a class="navlink" href="https://www.apple.com" target="_blank">Apple</a>
+								<a class="navlink" href="https://www.intel.com" target="_blank">Intel</a>
+								<a class="navlink" href="https://www.nvidia.com" target="_blank">Nvidia</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav">
+					<a class="navItem" href="#">Help &darr;</a>
+					<div id="dropdown">
+						<ul>
+							<li>
+								<a class="navlink" href="/pcChoice/">What PC should I get?</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav">
+					<a class="navItem" href="https://pcpartpicker.com/list/" target="_blank">Design your own PC</a>
+				</li>
+				<li class="nav" id="last">
+					<a class="navItem" href="/sign up/">Register</a>
+				</li>
+				<li class="nav" id="last">
+					<a class="navItem" id="cart" href="/cart/"><img id="cart-img" src="/Images/shopping cart.png" alt="Cart" height="29px"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+      <div width="75%">
+        <div>
+          <div style="border:1px solid grey;margin-top:0px;">
+            <h1 style="padding:10px;margin-top:0px;">Customer Registration</h1>
+            <div style="padding:30px;">
+              <form name="ca-form">
+                <div>
+                  <div>
+                    <p>Members can retrieve past orders store and maintain addresses and site settings. Please take a minute to fill out this form.</p>
+                  </div>
+                  <div>
+                    <p style="color:red">* Required field</p>
+                  </div>
+                  <table style="width:100%">
+                    <tr>
+                      <td>User Name* :</td>
+                      <td>
+                        <input type="username" maxlength="100" autocomplete="username"></td>
+                      <td>Email Address* :</td>
+                      <td>
+                        <input type="email" maxlength="100" placeholder="Your Email Address" autocomplete="email"></td>
+                    </tr>
+                    <tr>
+                      <td>Password* :</td>
+                      <td>
+                        <input type="password"  maxlength="40" placeholder="Please enter your password" autocomplete="new-password">
+                      </td>
+                      <td>Confirm Password* :</td>
+                      <td>
+                        <input type="password" maxlength="40" placeholder="Please re-enter your password" autocomplete="new-password">
+                      </td>
+                    </tr>
+                  </table>
+                  <div>
+                    <h2>Contact Information</h2>
+                    <p>If you would like to purchase products in our online store in the future, please use the same address as you would for your credit card bill or monthly bank statement. Otherwise, your order may not be processed.</p>
+                    <hr>
+                  </div>
+                  <table style="width:100%">
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>First&nbsp;Name*&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                      <td>
+                        <input type="text" placeholder="Your First Name" autocomplete="given-name">
+                      </td>
+                      <td>Last Name* :</td>
+                      <td>
+                        <input type="text" class="form-control" placeholder="Your Last Name" 
+                        autocomplete="family-name">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Address* :</td>
+                      <td>
+                        <input type="text" id="address" name="address" autocomplete="shipping street-address">
+                      </td>
+                      <td>Apt#/etc :</td>
+                      <td>
+                        <input type="text" placeholder="Your Apt#/Etc Here" aria-describedby="ca-suburb" aria-required="true" autocomplete="">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>City* :</td>
+                      <td>
+                        <input type="text" id="address-level2" name="city" autocomplete="shipping address-level2">
+                      </td>
+                      <td>Province* :</td>
+                      <td>
+                        <select>
+                          <option value="" selected="">Please Select</option>
+                          <option value="AB">Alberta</option>
+                          <option value="BC">British Columbia</option>
+                          <option value="MB">Manitoba</option>
+                          <option value="NB">New Brunswick</option>
+                          <option value="NF">Newfoundland and Labrador</option>
+                          <option value="NT">Northwest Territories</option>
+                          <option value="NS">Nova Scotia</option>
+                          <option value="NU">Nunavut</option>
+                          <option value="ON">Ontario</option>
+                          <option value="PEI">Prince Edward Island</option>
+                          <option value="QC">Quebec</option>
+                          <option value="SK">Saskatchewan</option><option value="YK">Yukon Territory</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Country* :</td>
+                      <td><input type="text" name="ca-country" id="ca-country" placeholder="Canada" autocomplete="country-name"></td>
+                      <td>Postal Code* :<br>(leave out the spaces)</td>
+                      <td><input type="text" name="ca-postal" id="ca-postal" placeholder="Your Postal Code" autocomplete="postal-code"></td>
+                    </tr>
+                    <tr>
+                      <td>Mobile Phone* :</td>
+                      <td>
+                        <div height="42px" width="363px" style="background-color:white"></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="tel" id="phnumb" name="ca-form-mobile-areacode" maxlength="10" placeholder="000 - 000 - 0000" aria-describedby="ca-form-mobile-areacode" aria-required="true" autocomplete="tel">
+                      </td>
+                      <td>Phone Number :</td>
+                      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="tel" id="phnumb" maxlength="10" placeholder="000 - 000 - 0000" aria-describedby="ca-form-mobile-areacode" aria-required="true" autocomplete="tel"> -
+                        Ext: <input id="phnumb" type="text" placeholder="000" autocomplete="tel-extension">
+                      </td>
+                    </tr>
+                  </table>
+                <hr>
+                <div style="display: block;">
+                  <div>
+                    <p>Subscription :</p>
+                  </div>
+                  <div>
+                    <div>
+                      <input type="checkbox" value="1" checked="">
+                      Opt in for membership exclusive eblasts, special discounts, and the latest tech news delivered straight to your inbox.
+                    </div>
+                    <br><br>
+                    <center><button id="button1" style="font-size:1em" onclick="signup()">CREATE ACCOUNT</button></center>
+                    <script>
+                      function signup() {
+                        alert("Successfully Signed Up.");
+                      }
+                    </script>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

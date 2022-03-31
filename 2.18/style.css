@@ -1,0 +1,90 @@
+body {
+  padding: 0px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li#last {
+  float: right;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 24px 27.4285714286px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+
+
+/* This changes the color scheme in Light Mode */
+@media (prefers-color-scheme:light) {
+  div {
+    overflow: hidden;
+    background-color: rgb(243, 243, 243);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(243, 243, 243);
+  }
+
+  li a {
+    background-color: rgb(243, 243, 243);
+    color: grey;
+  }
+  li a:hover {
+    background-color: rgb(221, 221, 221);
+  }
+  li a.main {
+    background-color:#008bbd;
+    color: white;
+  }
+}
+
+/* This changes the theme in Dark Mode */
+@media (prefers-color-scheme: dark) {
+  div {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li a {
+    background-color: #333;
+    color: white;
+  }
+  li a:hover {
+    background-color: #111;
+  }
+  li a.main {
+    background-color:#ed4533;
+    color: white;
+  }
+}
