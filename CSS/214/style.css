@@ -1,0 +1,43 @@
+.threeDimension{ 
+display: block; 
+border: 1px solid; 
+border-color: #aaa #000 #000 #aaa; 
+width: 8em; 
+background: #fc0; 
+text-decoration: none;
+text-align: center;
+color: black;
+} 
+
+a.threeDimension:active { 
+	display: block;
+  border: 1px solid;
+  border-color: #000 #aaa #aaa #000;
+  width: 8em;
+  background: #fc0;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+.twoDimension {
+  display: block;
+  border: 2px solid rgb(90, 90, 255);
+  border-radius: 7px;
+  width: 6em; 
+  background: #efefef; 
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+a.twoDimension:active {
+  display: block;
+  border: 2px solid #efefef;
+  border-radius: 7px;
+  width: 6em; 
+  background: rgb(90, 90, 255); 
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
