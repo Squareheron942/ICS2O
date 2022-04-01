@@ -1,0 +1,29 @@
+#btn {
+  background-color: #ed4533;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  border: 2px solid #cf3b2a;
+}
+
+#btn:active {
+  background-color:#cf3b2a;
+}
+
+#newHr, #oldHr {
+  border: 0px;
+  height: 3px;
+  left: 0px;
+}
+
+body {
+  text-align: left;
+}
+
+#correct {
+  color: lime;
+}
+
+#incorrect {
+  color: red;
+}
