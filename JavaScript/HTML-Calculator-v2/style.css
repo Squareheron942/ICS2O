@@ -1,0 +1,122 @@
+:root {
+  --font-color: green;
+  --screen-bg: rgb(29, 40, 52);
+  --spec-btn-bg: rgb(228, 231, 237);
+  --main-btn-bg: rgb(245, 247, 251);
+  --accent-bg: rgb(255, 96, 4);
+  --accent-bg-active: orangered;
+  --gap-color: rgb(202, 206, 211);
+  --border-radius: 20px;
+  background-color: rgb(131, 208, 225);
+  margin-top: 200px;
+}
+
+
+
+.calc-container {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-template-rows: 125px 125px 125px 125px 125px 125px;
+  gap: 0px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  justify-content: center;
+}
+
+
+
+.grid-item {
+  border: 1px solid var(--gap-color);
+  text-align: center;
+  background-color: var(--main-btn-bg);
+  font-size: 2em;
+  margin: 0px;
+}
+
+.grid-item:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#screen-container {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 0px;
+  padding: 0px !important;
+}
+
+#screen {
+  background-color: var(--screen-bg);
+  text-align: right;
+  color: white;
+}
+
+#num-container {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: auto auto auto auto;
+  grid-row-start: 3;
+  grid-row-end: 7;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  gap: 0px;
+}
+
+#sign-container {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-template-rows: auto;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  gap: 0px;
+}
+
+#equal-container {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 7;
+}
+
+.set-sign {
+  background-color: var(--spec-btn-bg);
+  border: 1px solid var(--gap-color);
+}
+
+.set-sign:active {
+  background-color: var(--accent-bg-active);
+}
+
+.spec-button {
+  background-color: var(--spec-btn-bg);
+  color: black;
+  border: 1px solid var(--gap-color);
+}
+
+
+
+.equal {
+  background-color: var(--accent-bg);
+  height: 500px;
+  width: 150px;
+  border: 1px solid var(--gap-color);
+  margin: 0px;
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.equal:active {
+  background-color: var(--accent-bg-active);
+}
+
+.bottom-left {
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.top {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+

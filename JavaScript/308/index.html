@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <script>
+    var vowels = /[aeiou]/i;
+    
+    function strFunc() {
+      document.getElementById("output").innerHTML = findVowels();
+    }
+    
+    function findVowels() {
+    var word = document.getElementById("inputWord").value;
+      if (vowels.test(word[0])) {
+        word += word[0];
+        word = word.replace(word[0], '');
+        return word;
+      } else {
+        return word + "ly";
+      }
+    }
+  </script>
+  <form>
+    <input type="text" placeholder="Input word" id="inputWord">
+    <button type="button" onclick="strFunc()">Enter</button>
+  </form>
+  <p>Your result:</p>
+  <p id="output">
+  </p>
+
+  <br><br><br><br><br>
+
+  <input type="text" placeholder="Input the character you are searching for" id="blockedIn"><br>
+  <input type="text" placeholder="Input the sentence or word you are searching in" id="wordIn"><br>
+  <button type="button" onclick="findIndex()">Enter</button>
+  <p id="indexes"></p>
+  <script esversion:'6'>
+    function findIndex() {
+      var blocked = document.getElementById("blockedIn").value;
+      var checkList = new RegExp(blocked, "i");
+      var input = document.getElementById("wordIn").value;
+      var positions = [];
+      var i;
+      console.log("filter letter:", blocked);
+      console.log("input:", input);
+      console.log("Filter:", checkList);
+      for (i = 0; i < input.length; i++) {
+        if (checkList.test(input[i])) {
+          positions.push(i);
+        } 
+      }
+      console.log("positions:", positions);
+      if (positions.length == 1) {
+        document.getElementById('indexes').innerHTML = `The index of the corresponding character is ${positions[0]}.`;
+      } else if (positions.length > 1) {
+        document.getElementById('indexes').innerHTML = `The index of the first corresponding character is ${positions[0]} and the final one is ${positions[positions.length - 1]}.`;
+      } else {
+        document.getElementById('indexes').innerHTML = `There were no matches found.`;
+      }
+    }
+  </script>
+
+  <br><br><br><br><br>
+  
+  <input type="text" id="inWord" placeholder="Enter a word">
+  <input type="text" id="replChar" placeholder="Enter the letter to replace">
+  <button type="button" onclick="replaceChar()">Enter</button>
+  <p id="replPar"></p>
+  <script>
+    function replaceChar() {
+      const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+      const an = /[aefhilmnorsx]/i;
+      var inWord = document.getElementById('inWord').value;
+      var replaceChar = document.getElementById('replChar').value;
+      var replaceLetter = letters[Math.floor(Math.random() * 26)];
+      var replCharRegEx = new RegExp(replaceChar);
+      var i, newWord;
+      console.log(replaceChar);
+      console.log(an.test(replaceChar));
+      if (replCharRegEx.test(inWord)) {
+        newWord = inWord.replace(replaceChar, replaceLetter);
+  
+        if (an.test(replaceChar)) {
+          document.getElementById('replPar').innerHTML = `The word "${inWord}" contains an ${replaceChar}.`;
+        } else {
+          document.getElementById('replPar').innerHTML = `The word "${inWord}" contains a ${replaceChar}.`;
+        }
+        document.getElementById('replPar').innerHTML += `<br><br>The random letter picked was ${replaceLetter}.`;
+        document.getElementById('replPar').innerHTML += `<br><br>You new word is: ${newWord}.`;
+      } else {
+        if (an.test(replaceChar)) {
+          document.getElementById('replPar').innerHTML = `The word "${inWord}" does not contain an ${replaceChar}.`;
+        } else {
+          document.getElementById('replPar').innerHTML = `The word "${inWord}" does not contain a ${replaceChar}.`;
+        }
+      }
+    }
+  </script>
+
+  <br><br><br><br><br>
+
+  <input type="text" id="word1" placeholder="1st word">
+  <input type="text" id="word2" placeholder="2nd word">
+  <input type="text" id="word3" placeholder="3rd word">
+  <button type="button" onclick="order()">Order Alphabetically</button>
+  <p id="sortedOut"></p>
+  <script>
+    function order() {
+      var words = [
+        document.getElementById('word1').value, 
+        document.getElementById('word2').value, 
+        document.getElementById('word3').value
+      ];
+      words.sort();
+      document.getElementById('sortedOut').innerHTML = `The alphabetically ordered words are: ${words}`;
+    }
+  </script>
+</body>
+
+</html>

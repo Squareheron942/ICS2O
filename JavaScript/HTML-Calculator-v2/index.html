@@ -1,0 +1,42 @@
+<html><head><link href="style.css" rel="stylesheet"><title></title>
+
+</head>
+<body>
+  <form>
+    <div class="ext-div-container">
+      <div class="calc-container">
+        <div id="screen-container">
+          <input type="text" class="top" id="screen" placeholder="0" style="font-size: 3em; border: 0px; padding-right: 20px; margin: 0px; height: 125px; width: 600px;" maxlength="0" disabled/>
+        </div>
+        <div id="sign-container">
+          <button class="grid-item set-sign" type="button" onclick="setSign('+')" id="bOperation">+</button>
+          <button class="grid-item set-sign" type="button" onclick="setSign('-')" id="bOperation">-</button>
+          <button class="grid-item set-sign" type="button" onclick="setSign('*')" id="bOperation">x</button>
+          <button class="grid-item set-sign" type="button" onclick="setSign('/')" id="bOperation">&divide;</button>
+        </div>
+        <div id="num-container">
+          <button class="grid-item" type="button" onclick="addNum(7)" id="bNum7">7</button>
+          <button class="grid-item" type="button" onclick="addNum(8)" id="bNum8">8</button>
+          <button class="grid-item" type="button" onclick="addNum(9)" id="bNum9">9</button>
+          <button class="grid-item" type="button" onclick="addNum(4)" id="bNum4">4</button>
+          <button class="grid-item" type="button" onclick="addNum(5)" id="bNum5">5</button>
+          <button class="grid-item" type="button" onclick="addNum(6)" id="bNum6">6</button>
+          <button class="grid-item" type="button" onclick="addNum(1)" id="bNum1">1</button>
+          <button class="grid-item" type="button" onclick="addNum(2)" id="bNum2">2</button>
+          <button class="grid-item" type="button" onclick="addNum(3)" id="bNum3">3</button>
+          <button class="grid-item bottom-left" type="button" onclick="addDecim()" id="bNum">.</button>
+          <button class="grid-item" type="button" onclick="addNum(0)" id="bNum">0</button>
+          <button class="grid-item" type="button" onclick="negate()" id="bNum">&#x207a;&#x2044;&#x208b;</button>
+        </div>
+        <div id="equal-container">
+          <button class="grid-item equal" type="button" onclick="equalPressed()" id="bEqual">=</button>
+        </div>
+        <!--<button class="grid-item spec-button" type="button" onclick="erase()" id="bOperation" style="font-size:1.5em !important;">C</button>-->
+      </div>
+    </div>
+  </form>
+  <script src="script.js">
+  </script>
+</body>
+</html>
+
