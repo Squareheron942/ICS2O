@@ -1,0 +1,83 @@
+:root {
+  --font-color: green;
+}
+
+@font-face {
+  font-family: 'alarm clock';
+  src: url('SFUIDisplay-Regular.otf');
+}
+body {
+  font-size: 30px !important;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-template-rows: auto auto 100px 100px 100px 100px 100px;
+  background-color: black;
+  padding: 30px !important;
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 0px;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  border-radius: 100%;
+  font-size: 1.5em !important;
+  font-family: 'alarm clock' !important;
+}
+
+.grid-item:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#screen {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: right;
+  border-radius: 0px !important;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-top: 80px;
+}
+
+.width-2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  border-radius: 50px;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.set-sign {
+  background-color: orange;
+}
+
+.set-sign:active {
+  background-color: orangered;
+}
+
+.spec-button {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+.spec-button:active {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.func1 {
+  background-color: none;
+}
+
+.func2 {
+  display:none;
+}
+
