@@ -1,15 +1,5 @@
 # Multiplayer Battleship Game
-## H
-### H
 
-```
-{
-  'age': 3,
-  'colour': 'green'
-}
-```
+## Getting Started
 
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+---
