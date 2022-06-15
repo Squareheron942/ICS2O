@@ -28,4 +28,5 @@
 | ----------- | ----------- |
 | R | Rotate Current Piece |
 | Enter | Place Piece |
+| Enter (While there is text in the "send" box) | Send Message |
 
