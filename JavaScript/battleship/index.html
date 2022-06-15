@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<script src="peerjs.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav id="banner-top">
+    <button class="topBtn" id='connect' onclick="connBTN()">Connect</button>
+    <button class="topBtn" id='sendB' onclick="sendBoard(); loadingAnim = setInterval(loading, 1000);" disabled>Send Board</button>
+    <span id='username'></span>       
+    <span id="connectMSG"></span>       
+    <span id="errorMSG"></span>       
+    <span id="turn"></span>
+    <span id="numWins">iofhgisdughsfdiuv</span>
+    <right>
+      <h3>
+        Press R to rotate ship<br>
+        Press Enter to select location
+      </h3>
+    </right>
+  </nav>
+  <div id="gameDiv">
+    <gameboard>
+    </gameboard>
+  </div>
+  
+  <div id="chat">
+    <h3>
+      <center>CHAT:</center>
+    </h3>
+    <div>
+      <ul id="output">
+      </ul>
+    </div>
+    <div id="inDiv">
+      <span id="inputPar">
+        <input type="text" id="textInput" placeholder="Enter Message">
+        <button type="button" onclick="SendMessage()" disabled="true" id="submitMSG">Send</button>
+      </span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

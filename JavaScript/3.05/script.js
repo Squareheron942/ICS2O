@@ -23,3 +23,9 @@ else if (grade >= 50) {
 else {
   alert("R");
 }
+
+var arr = [5];
+
+arr.append(5);
+
+console.log(arr);
