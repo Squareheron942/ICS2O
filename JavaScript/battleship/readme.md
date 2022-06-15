@@ -12,6 +12,6 @@
 
 ---
 
-### 2. PLaying the Game
+### 2. Playing the Game
 
-- 
+- All you have to do is click on a tile! It will reveal it, and then it's your opponent's turn. Keep playing and eventually, one of you will be victorious.
