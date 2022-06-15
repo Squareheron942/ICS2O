@@ -25,6 +25,7 @@
 ### Controls
 
 | Button | Action |
+| ----------- | ----------- |
 | R | Rotate Current Piece |
 | Enter | Place Piece |
 
