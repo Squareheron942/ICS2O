@@ -25,5 +25,6 @@
 ### Controls
 
 | Button | Action |
-| ----------- | ----------- |
-| Paragraph | Text |
+| R | Rotate Current Piece |
+| Enter | Place Piece |
+
