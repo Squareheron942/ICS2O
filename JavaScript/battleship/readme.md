@@ -20,9 +20,9 @@
 
 ### 3. The chat
 
-- You can send messages using the chat on the right side of the screen! Use the textbox at the bottom, type out your messageand click Enter or the "Send" button to send the message. 
+- You can send messages using the chat on the right side of the screen! Use the textbox at the bottom, type out your message and click Enter or the "Send" button to send the message. 
 
-### Controls
+### 4. Controls
 
 | Button | Action |
 | ----------- | ----------- |
@@ -30,3 +30,7 @@
 | Enter | Place Piece |
 | Enter (While there is text in the "send" box) | Send Message |
 
+### 5. Known problems
+
+term
+: definition
