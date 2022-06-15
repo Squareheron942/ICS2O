@@ -1,0 +1,183 @@
+:root {
+  --light-bg: lightgrey;
+/*   background-color: black; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+html {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+body {
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: 10vh 90vh;
+  grid-template-columns: 70vw 30vw;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.topBtn {
+  text-align: center;
+  background-color: #9edfff;
+  border: 2px solid #404f8c;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.noClick {
+  pointer-events: none;
+}
+
+.topBtn:hover {
+  background-color: #cdeefe;
+}
+
+.topBtn:active {
+  background-color: #a3cce1;
+  box-shadow: 0 2px #8d93a5;
+  transform: translateY(2px);
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+gameboard {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+  place-content: center;
+  background-color: #1d3954;
+  outline: #000 10px;
+  border-style: solid;
+  border-width: 5px;
+  gap: 1px 1px;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+#connectMSG {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+#errorMSG {
+  background-color: rgba(255, 0, 0, 0.25);
+  color: red;
+}
+
+h1 {
+  font-size: 3em;
+  font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+
+.myMap {
+  text-align: center;
+  justify-content: center;
+}
+
+p {
+  color: black;
+	margin-bottom:1em;
+}
+
+right {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+#chat {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: var(--light-bg);
+  position: relative;
+  outline: 10px;
+  outline-color: #0000;
+  border-style: solid;
+  border: width 5px;
+}
+
+#output {
+  height: 75vh; 
+  color: black;
+  background-color: inherit;
+  padding-left: 10px; 
+  overflow-y: scroll;
+  word-wrap: break-word;
+}
+
+#banner-top {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #567299;
+}
+
+#gameDiv {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+/* .myMap {
+  display: block;
+}
+
+.oppMap {
+  display: block;
+} */
+
+#inputPar {
+/*   position: absolute; */
+  left: 5px;
+  bottom: 5px;
+}
+
+#inDiv {
+  height: 7vh;
+  background-color: #004d65;
+  right: 0px;
+  bottom: 0px;
+  
+}
+
+#textInput {
+  width: 50%;
+}
+/* 
+#shipselect {
+  position: absolute;
+  bottom: 5px; 
+  left: 5px;
+  height: 72vh;
+  border-radius: 5px;
+  background-color: #748e9a;
+}
+
+.shippick{
+  background-color: #9580ff;
+  accent-color: #58f3fe;
+  appearance: none; 
+}
+
+.shippick:checked~label {
+  outline: 2px solid #00b3ff !important;
+  outline-radius: 5px;
+}
+ */
