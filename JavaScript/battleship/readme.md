@@ -24,7 +24,7 @@
 
 ### Controls
 
-| Syntax | Description |
+| Button | Action |
 | ----------- | ----------- |
 | Header | Title |
 | Paragraph | Text |
