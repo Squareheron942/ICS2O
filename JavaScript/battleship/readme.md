@@ -34,3 +34,4 @@
 
 term
 : definition
+: other definition
