@@ -26,5 +26,4 @@
 
 | Button | Action |
 | ----------- | ----------- |
-| Header | Title |
 | Paragraph | Text |
