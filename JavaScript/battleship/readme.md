@@ -15,3 +15,16 @@
 ### 2. Playing the Game
 
 - All you have to do is click on a tile! It will reveal it, and then it's your opponent's turn. Keep playing and eventually, one of you will be victorious.
+
+---
+
+### 3. The chat
+
+- You can send messages using the chat on the right side of the screen! Use the textbox at the bottom, type out your messageand click Enter or the "Send" button to send the message. 
+
+### Controls
+
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
