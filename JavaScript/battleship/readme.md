@@ -22,6 +22,8 @@
 
 - You can send messages using the chat on the right side of the screen! Use the textbox at the bottom, type out your message and click Enter or the "Send" button to send the message. 
 
+== Pressing Enter to send messages or R while typing will still affect the locations and placing of pieces on the board if it has not been submitted yet, so it is better to only send messages after having done so ==
+
 ---
 
 ### 4. Controls
@@ -34,4 +36,6 @@
 
 ---
 
-:skull: x7
+### 5. Code from other sources
+
+- [peerJS](https://peerjs.com/): Code library used to make peer-to-peer connections easier
