@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- This next part makes the tab bar red (in dark mode) and blue (in light mode) in Safari 15 and some versions of Chrome -->
+    <meta name="theme-color" content="#ed4533" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#008dbb" media="(prefers-color-scheme: light)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+    <title>The Geeky Box</title>
+    <link href="/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <script src="script.js">
+    </script>
+    <nav>
+      <div class="navbar">
+        <ul>
+          <li class="nav">
+            <a class="navItem" id="main" href="/">Home</a>
+          </li>
+          <li class="nav">
+            <a class="navItem" href="#">Shop &darr;</a>
+            <div id="dropdown">
+              <ul>
+                <li>
+                  <a class="navlink" href="/shop/prebuilts/">Prebuilts</a>
+                  <a class="navlink" href="/shop/laptops/">Laptops</a>
+                  <a class="navlink" href="#">Components</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav">
+            <a class="navItem" href="#">Brands &darr;</a>
+            <div id="dropdown">
+              <ul>
+                <li>
+                  <a class="navlink" href="https://www.amd.com" target="_blank">AMD</a>
+                  <a class="navlink" href="https://www.apple.com" target="_blank">Apple</a>
+                  <a class="navlink" href="https://www.intel.com" target="_blank">Intel</a>
+                  <a class="navlink" href="https://www.nvidia.com" target="_blank">Nvidia</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav">
+            <a class="navItem" href="#">Help &darr;</a>
+            <div id="dropdown">
+              <ul>
+                <li>
+                  <a class="navlink" href="/pcChoice/">What PC should I get?</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav">
+            <a class="navItem" href="https://pcpartpicker.com/list/" target="_blank">Design your own PC</a>
+          </li>
+          <li class="nav" id="last">
+            <a class="navItem" href="/sign up/">Register</a>
+          </li>
+          <li class="nav" id="last">
+            <a class="navItem" id="cart" href="/cart"><img id="cart-img" src="https://Computer-Website.finndooley.repl.co/Images/shopping cart.png" alt="Cart" height="29px"></a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="flexDiv1">
+      <div>
+        <a id="tdlink" href="cpus/">
+          <table id="table1">
+            <tr>
+              <td width="10%"><a href="cpus/" id="title">CPU</a></td>
+              <td><hr id="hr" width="80%"></td>
+            </tr>
+          </table>
+          <table id="table1">
+            <tr>
+              <td valign="top" style="">
+                <p id="prodinfo">The CPU, or Central Processing Unit, is the most important part of a computer. The main two brands are Intel and AMD.<br><br></p>
+                <p id="shoplink"><a href="cpus/" id="buylink">Shop CPUs here &rarr;</a></p>
+              </td>
+              <td>
+                <img src="/Images/5600G.webp" alt="An AMD CPU" height="210px">
+              </td>
+            </tr>
+          </table>
+        </a>
+      </div>
+      <div>
+        <a id="tdlink" href="gpus/">
+          <table id="table1">
+            <tr>
+              <td style="width:15%"><a href="gpus/" id="title" >GPU</a></td>
+              <td><hr id="hr" width="80%">
+              </td>
+            </tr>
+          </table>
+          <table id="table1">
+            <tr>
+              <td valign="top"><p id="prodinfo">The GPU, or Graphics Processing Unit, is the part in charge of displaying images on screen. The main two brands are Nvidia and AMD.</p>
+              <p id="shoplink"><a href="gpus/" id="buylink">Shop GPUs here &rarr;</a></p></td>
+              <td><img src="/Images/3070.jpg" alt="An Nvidia GPU" height="200"></td>
+            </tr>
+          </table>
+        </a>
+      </div>
+      <div>
+        <a id="tdlink" href="motherboards/">
+          <table id="table1">
+            <tr>
+              <td width="20%"><a href="motherboards/" id="title">Motherboards</a></td>
+              <td><hr id="hr" width="80%">
+              </td>
+            </tr>
+          </table>
+          <table id="table1">
+            <tr>
+              <td valign="top"><p id="prodinfo">Motherboards keep all your other components together. They allow parts to communicate properly and add ports in which to plug in expansion cards and other components.</p>
+              <p id="shoplink"><a href="motherboards/" id="buylink">Shop Motherboards here &rarr;</a></p></td>
+              <td><img src="/Images/b550a-pro.png" alt="An MSI motherboard" height="200"></td>
+            </tr>
+          </table>
+        </a>
+      </div>
+      <div>
+        <a id="tdlink" href="ram/">
+          <table id="table1">
+            <tr>
+              <td width="10%"><a href="ram/" id="title">RAM</a></td>
+              <td><hr id="hr" width="80%">
+              </td>
+            </tr>
+          </table>
+          <table id="table1">
+            <tr>
+              <td valign="top"><p id="prodinfo">RAM, or Random Access Memory, is used to store important data your computer is currently using.<br><br><br></p>
+              <p id="shoplink"><a href="ram/" id="buylink">Shop RAM here &rarr;</a></p></td>
+              <td><img src="/Images/LPX.png" alt="An AMD CPU" height="200px"></td>
+            </tr>
+          </table>
+        </a>
+      </div>
+      <div>
+        <a id="tdlink" href="coolers/">
+          <table id="table1">
+            <tr>
+              <td width="20%"><a href="coolers/" id="title">Coolers</a></td>
+              <td><hr id="hr" width="80%">
+              </td>
+            </tr>
+          </table>
+          <table id="table1">
+            <tr>
+              <td valign="top"><p id="prodinfo">Coolers, like fans, are used to cool PC parts. Specifically, they cool CPUs. They transfer heat away from the heat spreader on the CPU and create a large surface area to release heat.<br><br></p>
+              <p id="shoplink"><a href="coolers/" id="buylink">Shop Coolers here &rarr;</a></p></td>
+              <td><img src="/Images/nh-d15.png" alt="An AMD CPU" height="270px"></td>
+            </tr>
+          </table>
+        </a>
+      </div>
+      <div>
+        <a id="tdlink" href="fans/">
+          <table id="table1">
+            <tr>
+              <td width="10%"><a href="fans/" id="title">Fans</a></td>
+              <td><hr id="hr" width="80%">
+              </td>
+            </tr>
+          </table>
+          <table id="table1">
+            <tr>
+              <td valign="top"><p id="prodinfo">Fans are a nearly indispensable part of any PC. They cool the parts and prevent them from overheating, which could be extremely harmful to both the parts and their performance.<br><br></p>
+              <p id="shoplink"><a href="fans/" id="buylink">Shop Fans here &rarr;</a></p></td>
+              <td><img src="/Images/nf-a14.png" alt="A Noctua Fan, the NF-A14" height="298"></td>
+            </tr>
+          </table>
+        </a>
+      </div>
+      <div>
+        <a id="tdlink" href="cases/">
+          <table id="table1">
+            <tr>
+              <td width="10%"><a href="cases/" id="title">Cases</a></td>
+              <td><hr id="hr" width="80%">
+              </td>
+            </tr>
+          </table>
+          <table id="table1">
+            <tr>
+              <td valign="top"><p id="prodinfo">Cases are the most important part in terms of how your PC looks and how hard it is to build. There is an extreme variety of cases.<br><br></p>
+              <p id="shoplink"><a href="cases/" id="buylink">Shop Cases here &rarr;</a></p></td>
+              <td><img src="/Images/nzxth1.png" alt="An NZXT case" height="250px"></td>
+            </tr>
+          </table>
+        </a>
+      </div>
+      <div>
+        <a id="tdlink" href="storage/">
+          <table id="table1">
+            <tr>
+              <td width="10%"><a href="storage/" id="title">Storage</a></td>
+              <td><hr id="hr" width="80%">
+              </td>
+            </tr>
+          </table>
+          <table id="table1">
+            <tr>
+              <td valign="top"><p id="prodinfo">Storage is necessary to have anything run on your computer. It is used to. store the operating systems and any programs and games you might want.<br><br></p>
+              <p id="shoplink"><a href="storage/" id="buylink">Shop Storage here &rarr;</a></p></td>
+              <td><img src="/Images/wd-blue.png" alt="WD Blue SN550" height="260px"></td>
+            </tr>
+          </table>
+        </a>
+      </div>
+      <div>
+        <a id="tdlink" href="psu/">
+          <table id="table1">
+            <tr>
+              <td width="10%"><a href="psu/" id="title">PSU</a></td>
+              <td><hr id="hr" width="80%">
+              </td>
+            </tr>
+          </table>
+          <table id="table1">
+            <tr>
+              <td valign="top"><p id="prodinfo">The PC isn't the only necessary part. You still need a monitor, mouse, keyboard, operating system, and more.<br><br><br><br></p>
+              <p id="shoplink"><a href="psu/" id="buylink">Shop Power Supplies here &rarr;</a></p></td>
+              <td><img src="/Images/rm750.png" alt="Corsair RM750x" height="250px"></td>
+            </tr>
+          </table>
+        </a>
+      </div>
+      <div>
+        <a id="tdlink" href="peripherals/">
+          <table id="table1">
+            <tr>
+              <td width="10%"><a href="peripherals/" id="title">Other</a></td>
+              <td><hr id="hr" width="80%">
+              </td>
+            </tr>
+          </table>
+          <table id="table1">
+            <tr>
+              <td valign="top"><p id="prodinfo">The PC isn't the only necessary part. You still need a monitor, mouse, keyboard, operating system, and more.<br><br><br><br></p>
+              <p id="shoplink"><a href="peripherals/" id="buylink">Shop Other here &rarr;</a></p></td>
+              <td><img src="/Images/space-monitor.png" alt="An NZXT case" height="329px"></td>
+            </tr>
+          </table>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
